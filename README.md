@@ -16,9 +16,13 @@ struct sockaddr_in will be used for creating the socket address
 in <sys/socket.h>
 
 socket() will be used for creating the socket file descriptor
+
 bind() will be used for binding the created socket with the socket address
+
 listen() will be used to to make the socket be happy to recieve incoming connections
+
 connect() will be used for connecting a socket with the server address
+
 accept() will be used to accept/ show the first connection
 
 in <unistd.h>
