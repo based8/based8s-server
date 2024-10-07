@@ -39,9 +39,10 @@ int main()
 
 	connfd = accept(sockfd, (struct sockaddr *) &client, &clilen);
 	if (connfd < 0){ 
-		perror("Error with accepting connection");
+		perror("Error with accepting connection\n");
 	} else {
-		printf("Connection accepted!");
-		close(sockfd, connfd);
+		printf("Connection accepted!\n");
+		close(connfd);
+		close(sockfd);
 	}
 }	

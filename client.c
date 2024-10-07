@@ -18,9 +18,10 @@ int main()
 	
 	conn = socket(AF_INET, SOCK_STREAM, 0);
 	if (connect(conn, (struct sockaddr *) &servaddr, sizeof(servaddr)) < 0){
-		printf("error while connecting to server");
+		printf("error while connecting to server\n");
 	} else {
-		printf("connected to server");
+		printf("connected to server\n");
+		close(conn);
 	}
 		
 }
